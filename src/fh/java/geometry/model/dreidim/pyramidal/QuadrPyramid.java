@@ -15,14 +15,30 @@ public class QuadrPyramid extends PyramidalShape {
         this.height = height;
     }
 
+    public double getSideA() {
+        return sideA;
+    }
+
+    public void setSideA(double sideA) {
+        this.sideA = sideA;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
     @Override
     public double calculateVolume() {
-        return 0;
+        return (1.0/3.0*(sideA*sideA*height));
     }
 
     @Override
     public double calculateSurfaceArea() {
-        return 0;
+        return (sideA*sideA)+(4*(sideA*height/2));
     }
 
     @Override
